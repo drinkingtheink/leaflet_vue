@@ -67,6 +67,7 @@ $blue_dark: #023036;
 		font-weight: 300;
 		padding: 1rem;
 		color: $yellow;
+		border-top: 3px solid $yellow;
 		margin: 3rem 0 0 0;
 		position: relative;
 		background-color: $blue;
@@ -116,7 +117,6 @@ $blue_dark: #023036;
 	&.active {
 		opacity: 1;
 		background-color: rgba(255,255,255,1);
-		border-left: 3px solid $yellow;
 
 		.index,
 		p {
