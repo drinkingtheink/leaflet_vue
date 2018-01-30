@@ -6,7 +6,7 @@ module.exports.stop_points = [
 		timeframe: '2006-2008',
 		description: '',
 		still_exists: true,
-		role: 'Content Creator/Lead',
+		role: 'Course Content Creator',
 		active: false
 	},
 	{
