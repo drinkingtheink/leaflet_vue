@@ -3,21 +3,27 @@
 		<h3>My Career >> </h3>
 
 		<div class="leaflet_map__controls--stops">
-			<p 
+			<article 
 				v-for="stop in stop_points" 
 				@click="broadcastCoords(stop)"
 				class="leaflet_map__controls--stop"
 				:class="{ active : stop.active }"
 			>
-				{{ stop.title }} <span class="timeframe">({{ stop.timeframe }})</span>
-			</p>
+				<span class="index">{{ stop.order }}</span>
+
+				<p>
+					<span class="index">{{ stop.title }} </span>
+					<span class="meta">{{ stop.timeframe }} | {{ stop.role }}</span>
+				</p>
+			</article>
 		</div>
 	</section>
 </template>
 
 <script>
-import stop_points from '../static/stop_points';
+import {stop_points} from '../static/stop_points';
 import {EventBus} from './event_bus.js';
+import _ from 'lodash';
 export default {
   name: 'controls',
   data() {
@@ -62,11 +68,20 @@ $blue: #0E6875;
 	padding: 1rem .5rem;
 	margin: 0;
 	transition: all .2s;
-	opacity: .75;
-	background-color: rgba(255,255,255,.25);
-	color: $orange;
+	background-color: rgba(255,255,255,.5);
+	color: $blue;
+	display: flex;
 
-	.timeframe {
+	.index {
+
+	}
+
+	p {
+		margin: 0;
+		padding-left: 1rem;
+	}
+
+	.meta {
 		display: block;
 		font-size: .75rem;
 	}
@@ -77,12 +92,16 @@ $blue: #0E6875;
 	}
 
 	&.active {
-		color: $blue;
 		opacity: 1;
 		background-color: rgba(255,255,255,1);
 
+		.index,
 		p {
-			font-weight: bold;
+			font-weight: 700;
+		}
+
+		.meta {
+			color: $yellow;
 		}
 	}
 }

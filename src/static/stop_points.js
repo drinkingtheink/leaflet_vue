@@ -1,4 +1,4 @@
-module.exports = [
+module.exports.stop_points = [
 	{
 		order: 1,
 		title: '360training.com',
@@ -7,7 +7,7 @@ module.exports = [
 		description: '',
 		still_exists: true,
 		role: 'Content Creator/Lead',
-		active: true
+		active: false
 	},
 	{
 		order: 2,
@@ -58,6 +58,6 @@ module.exports = [
 		description: '',
 		still_exists: true,
 		role: 'Senior Solutions Engineer',
-		active: false
+		active: true
 	}
 ]
