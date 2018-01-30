@@ -28,7 +28,7 @@ export default {
   name: 'controls',
   data() {
     return {
-      stop_points: stop_points
+      stop_points: _.reverse(stop_points)
     }
   },
   methods: {
