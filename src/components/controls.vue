@@ -136,7 +136,7 @@ $blue_dark: #023036;
 			width: 0;
 			position: absolute;
 			pointer-events: none;
-			border-left-color: $yellow;
+			border-left-color: $blue;
 			border-width: 15px;
 			margin-top: -15px;
 		}
