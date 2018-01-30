@@ -7,12 +7,12 @@
 
 <script>
 import {EventBus} from './event_bus.js';
-const defaultCoords = [30.4598515,-97.8423126];
+const defaultCoords = [30.4582658,-97.7523362];
 export default {
   name: 'leafmap',
   data() {
     return {
-      zoom: 13,
+      zoom: 12,
       center: defaultCoords,
       url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
