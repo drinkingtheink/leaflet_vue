@@ -3,15 +3,18 @@
   	<controls></controls>
 
   	<leafmap></leafmap>
+
+    <leaflet_footer></leaflet_footer>
   </section>
 </template>
 
 <script>
 import leafmap from './leafmap'
 import controls from './controls'
+import leaflet_footer from './leaflet_footer'
 export default {
   name: 'stage',
-  components: { controls, leafmap },
+  components: { controls, leafmap, leaflet_footer },
   data() {
     return {
       

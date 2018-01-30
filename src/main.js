@@ -4,6 +4,7 @@ import Vue from 'vue'
 import stage from './components/stage'
 import leafmap from './components/leafmap'
 import controls from './components/controls'
+import leaflet_footer from './components/leaflet_footer'
 
 Vue.config.productionTip = false
 
@@ -16,6 +17,6 @@ Vue.component('v-marker', Vue2Leaflet.Marker);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  components: { stage, controls, leafmap },
+  components: { stage, controls, leafmap, leaflet_footer },
   template: '<stage/>'
 })
