@@ -1,6 +1,6 @@
 <template>
     <footer class="leaflet_map__footer">
-        Footer
+        <a :href="repo_link" target="_blank" alt="Leaflet_Vue Project">> Project Repo</a>
     </footer>
 </template>
 
@@ -12,6 +12,7 @@
     name: 'leaflet_footer',
     data() {
       return {
+          repo_link: 'https://github.com/drinkingtheink/leaflet_vue'
       }
     }
   }
@@ -29,6 +30,14 @@
     height: 3rem;
     z-index: 100;
     border-top: 3px solid $yellow;
+
+    a {
+        color: $yellow;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+        width: 50vw;
+    }
 }
 
 </style>
